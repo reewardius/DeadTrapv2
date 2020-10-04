@@ -39,7 +39,7 @@ def urls(num, countrycode, localnumber):
 
     print("\n[*] Additional URLS you should try checking out to gather more info...\n")
     print("[+] Scan URL: https://www.411.com/phone/{}".format(num.replace('+', '').replace(' ', '-')))
-    print("[+] Scan URL: https://www.truecaller.com/{}/{}".format(countrycode, localnumber))
+    print("[+] Scan URL: https://www.truecaller.com/search/{}/{}".format(countrycode, localnumber))
     print("[+] Scan URL: https://www.truepeoplesearch.com/results?phoneno={}".format(num.replace(' ', '')))
     print("[+] Scan URL: https://sync.me/search/?number={}".format(num.replace("+", "")))
     try:
