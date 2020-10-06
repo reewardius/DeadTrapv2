@@ -19,9 +19,9 @@ def spamcalls(num):
             for names in name:
                 lists.append(str(names))
             lists.pop(0)
-            print("[+] spamcalls.net spamcall scan says: ", remove_tags(", ".join(lists)))
+            return{"spamcalls.net" :  remove_tags(", ".join(lists))}
         except Exception as e:
-            print(e)
+            return{'err' : e}
             
 def scamcallfighters(num):
 
@@ -31,22 +31,18 @@ def scamcallfighters(num):
             parse = BeautifulSoup(r.content.decode('utf-8'), 'html.parser')
             for g in parse.find_all('div', class_='nrp_headmat1'):
 		            records = g.find_all('p')
-            print("[+] scamcallfighters.com spamcall scan says: ", remove_tags(str(records)))
+            return{"[+] scamcallfighters.com" : remove_tags(str(records))}
         except Exception as e:
-            print(e)
+            return{'err' : e}
 
 def urls(num, countrycode, localnumber):
 
-    print("\n[*] Additional URLS you should try checking out to gather more info...\n")
-    print("[+] Scan URL: https://www.411.com/phone/{}".format(num.replace('+', '').replace(' ', '-')))
-    print("[+] Scan URL: https://www.truecaller.com/search/{}/{}".format(countrycode, localnumber))
-    print("[+] Scan URL: https://www.truepeoplesearch.com/results?phoneno={}".format(num.replace(' ', '')))
-    print("[+] Scan URL: https://sync.me/search/?number={}".format(num.replace("+", "")))
+    return{"fouroneone": "https://www.411.com/phone/{}".format(num.replace('+', '').replace(' ', '-')), "truecaller": "https://www.truecaller.com/{}/{}".format(countrycode, localnumber), 'truepeoplesearch': "https://www.truepeoplesearch.com/results?phoneno={}".format(num.replace(' ', '')), 'syncme': "https://sync.me/search/?number={}".format(num.replace("+", ""))}
     try:
         for r in search(num):
-            print("[+] Scan URL: ", r)
+            return{"URL": r}
     except:
-        print("[!] Google being retard again, try using proxies")
+        return{"err" : "error occured"}
 
 
 

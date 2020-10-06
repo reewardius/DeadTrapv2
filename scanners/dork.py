@@ -19,40 +19,14 @@ def sites():
 			    results.append(link)
     return results
 
-def spiderv(num, sites):
-    
-    crawl = requests.get(sites)
-
-    if num in crawl.text:
-        print("[+] Found number in website: ", sites)
-    else:
-        print("[!] Number not found on website : ", sites)
-    
-def spider(num, sites):
-    
-    crawl = requests.get(sites)
-
-    if num in crawl.text:
-        foundnumbers.append(sites)
-
 def dorkv(num, sites):
 
     try:
         for result in search("site:{} intext:{}".format(sites, num), stop=1):
             if result:
-                print("[+] Found number in website:" , result)
+                return{"website" : result}
             else:
-                print("[!] Number not found on website: ", result)
+                pass
     except:
-        print("[!] Google being retard once again blocking requests, try using proxy")
-
-def dork(num, sites):
-
-    try:
-        for result in search("site:{} intext:{}".format(sites, num), stop=1):
-            if result:
-                foundnumbers.append(result)
-
-    except:
-        print("[!] Google being retard once again blocking requests, try using proxy")
+        return{"err" :"google being retard once again blocking requests, try using proxy"}
     
