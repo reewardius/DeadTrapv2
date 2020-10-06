@@ -1,6 +1,5 @@
 import os
 import requests
-from PIL import Image
 from bs4 import BeautifulSoup
 import sys
 import re
