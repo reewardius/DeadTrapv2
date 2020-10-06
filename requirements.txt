@@ -5,3 +5,4 @@ flask-cors
 bs4
 requests
 phonenumbers
+gunicorn
