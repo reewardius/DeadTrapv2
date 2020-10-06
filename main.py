@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restful import Resource, Api
 from flask_cors import CORS
+from flask import request
 from scanners.fraud import *
 from scanners.basicScan import libphonenumbers
 from scanners.numVerifyscan import numverifyScan
