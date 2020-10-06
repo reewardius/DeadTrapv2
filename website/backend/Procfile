@@ -1,1 +1,1 @@
-deadtrap-flask:app
+deadtrap-flask:app,api,cors
