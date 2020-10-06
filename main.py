@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import request
 from flask_restful import Resource, Api
 from flask_cors import CORS
 from scanners.fraud import *
@@ -9,6 +10,7 @@ import osint.fb as fb
 import osint.linkedin as linkedin
 import osint.twitter as twitter 
 import time
+
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
@@ -39,5 +41,3 @@ class Multi(Resource):
 
 api.add_resource(Helloworld, "/")
 api.add_resource(Multi, '/<num>')
-if __name__ == "__main__":
-    app.run(debug=True)
