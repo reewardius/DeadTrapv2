@@ -32,14 +32,9 @@ def twitter(num):
             except:
                 pass
 
-            print("[+] Found Twitter Users : ", len(profiles))
-
             if len(profiles) != 0:
 
-                print("[+] Found Twitter email :", name)
+                return{"users" : len(profiles), "email" : name}
             
             else:
-                pass
-
-        else:
-            print("[!] No Twitter user is associated with " + num)
+                return{"users" : len(profiles)}
