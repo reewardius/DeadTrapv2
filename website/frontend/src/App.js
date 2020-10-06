@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/DeadTrapv2" component={LandingPage} />
+          <Route exact path="/" component={LandingPage} />
           <Route exact path="/errors" component={Particle} />
           <Route exact path="/phonesearch" component={SearchPage} />
           <Redirect to="/errors" />
