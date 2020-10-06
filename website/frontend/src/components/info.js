@@ -25,7 +25,7 @@ class FetchInfo extends React.Component {
   };
 
   async componentDidMount() {
-    const url = "http://127.0.0.1:5000/" + this.props.links;
+    const url = "https://deadtrap-api.herokuapp.com/" + this.props.links;
     console.log(url);
     const response = await fetch(url);
     const data = await response.json();
