@@ -2,7 +2,6 @@ google
 flask
 flask-restful
 flask-cors
-hashlib
 bs4
 requests
 phonenumbers
