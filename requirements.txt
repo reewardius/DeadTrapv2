@@ -7,3 +7,4 @@ requests
 phonenumbers
 gunicorn
 regex
+html5lib
