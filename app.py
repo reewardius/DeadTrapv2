@@ -40,5 +40,3 @@ class Multi(Resource):
 
 api.add_resource(Helloworld, "/")
 api.add_resource(Multi, '/<num>')
-if __name__ == "__main__":
-    app.run()
