@@ -1,0 +1,4 @@
+google
+flask
+bs4
+requests
