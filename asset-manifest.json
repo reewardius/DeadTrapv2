@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/DeadTrapv2/static/css/main.2ace4572.chunk.css",
-    "main.js": "/DeadTrapv2/static/js/main.e6e19990.chunk.js",
-    "main.js.map": "/DeadTrapv2/static/js/main.e6e19990.chunk.js.map",
+    "main.js": "/DeadTrapv2/static/js/main.1f8c8970.chunk.js",
+    "main.js.map": "/DeadTrapv2/static/js/main.1f8c8970.chunk.js.map",
     "runtime-main.js": "/DeadTrapv2/static/js/runtime-main.9b5277cf.js",
     "runtime-main.js.map": "/DeadTrapv2/static/js/runtime-main.9b5277cf.js.map",
     "static/js/2.8ccfe551.chunk.js": "/DeadTrapv2/static/js/2.8ccfe551.chunk.js",
     "static/js/2.8ccfe551.chunk.js.map": "/DeadTrapv2/static/js/2.8ccfe551.chunk.js.map",
     "index.html": "/DeadTrapv2/index.html",
-    "precache-manifest.cd5898e015067a1c0f17f14bd6350eb6.js": "/DeadTrapv2/precache-manifest.cd5898e015067a1c0f17f14bd6350eb6.js",
+    "precache-manifest.3f90a6d8dff05829d3af4a4aa862b212.js": "/DeadTrapv2/precache-manifest.3f90a6d8dff05829d3af4a4aa862b212.js",
     "service-worker.js": "/DeadTrapv2/service-worker.js",
     "static/css/main.2ace4572.chunk.css.map": "/DeadTrapv2/static/css/main.2ace4572.chunk.css.map",
     "static/js/2.8ccfe551.chunk.js.LICENSE.txt": "/DeadTrapv2/static/js/2.8ccfe551.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9b5277cf.js",
     "static/js/2.8ccfe551.chunk.js",
     "static/css/main.2ace4572.chunk.css",
-    "static/js/main.e6e19990.chunk.js"
+    "static/js/main.1f8c8970.chunk.js"
   ]
 }
