@@ -31,7 +31,7 @@ def scamcallfighters(num):
             parse = BeautifulSoup(r.content.decode('utf-8'), 'html.parser')
             for g in parse.find_all('div', class_='nrp_headmat1'):
 		            records = g.find_all('p')
-            return{"[+] scamcallfighters.com" : remove_tags(str(records))}
+            return{"scamcallfighters.com" : remove_tags(str(records))}
         except Exception as e:
             return{'err' : e}
 

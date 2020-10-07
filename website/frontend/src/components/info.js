@@ -7,10 +7,7 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh',
-    fontFamily : "Nunito Sans",
-    color: "green",
-    fontSize: "45px",
+    color: "yellow",
   },
   color:{
     color: "green",
@@ -27,7 +24,6 @@ class FetchInfo extends React.Component {
 
   async componentDidMount() {
     const url = "https://deadtrap-api.herokuapp.com/" + this.props.links;
-    console.log(url);
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ person: data, loading: false });
@@ -38,11 +34,17 @@ class FetchInfo extends React.Component {
     const { classes } = this.props;
 
     if (this.state.loading) {
-      return <div className={classes.base}><CircularProgress color="#7CFC00" /></div>;
+      return <div className={classes.base}><CircularProgress /></div>;
     }
 
     if (!this.state.person) {
       return <div className={classes.base}>didn't get a person</div>;
+    }
+    if (this.state.person.facebook.users){
+      this.setState({username : this.state.person.facebook.usernames});
+    }
+    if (this.state.person.twitter.users){
+      this.setState({mail : this.state.person.twitter.email});
     }
 
     return (
@@ -62,6 +64,22 @@ class FetchInfo extends React.Component {
             <div><h5>Location : {this.state.person.numverify.location}</h5></div>
             <div><h5>Carrier : {this.state.person.numverify.carrier}</h5></div>
             <div><h5>LineType : {this.state.person.numverify.line_type}</h5></div>
+            <h3>[+] Disposable Number Scan</h3>
+            <div><h5>Website : {this.state.person.dork.website}</h5></div>
+            <h3>[+] Social Media Footprints</h3>
+            <div><h5>Facebook User Found : {this.state.person.facebook.users}</h5></div>
+            <div><h5>Facebook UserNames : {this.state.username}</h5></div>
+            <div><h5>Twitter User Found : {this.state.person.twitter.users}</h5></div>
+            <div><h5>Twitter Email : {this.state.mail}</h5></div>
+            <div><h5>LinkedIn accounts : {this.state.person.linkedin.accounts}</h5></div>
+            <h3>[+] Spam/Scam Calls</h3>
+            <div><h5>spamcalls.net says : {this.state.person.fraud.spamcalls.net}</h5></div>
+            <div><h5>scamcallsfighters.com says : {this.state.person.fraud2.scamcallfighters.com}</h5></div>
+            <div><h5>URLS : {this.state.person.fraud3.fourfourone}</h5></div>
+            <div><h5>{this.state.person.fraud3.truecaller}</h5></div>
+            <div><h5>{this.state.person.fraud3.truepeoplesearch}</h5></div>
+            <div><h5>{this.state.person.fraud3.syncme}</h5></div>
+            <div><h5>{this.state.person.fraud3.URL}</h5></div>
       </div>
     );
   }
