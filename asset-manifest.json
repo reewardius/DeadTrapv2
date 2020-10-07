@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/DeadTrapv2/static/css/main.2ace4572.chunk.css",
-    "main.js": "/DeadTrapv2/static/js/main.7a72776f.chunk.js",
-    "main.js.map": "/DeadTrapv2/static/js/main.7a72776f.chunk.js.map",
+    "main.js": "/DeadTrapv2/static/js/main.ba69c646.chunk.js",
+    "main.js.map": "/DeadTrapv2/static/js/main.ba69c646.chunk.js.map",
     "runtime-main.js": "/DeadTrapv2/static/js/runtime-main.9b5277cf.js",
     "runtime-main.js.map": "/DeadTrapv2/static/js/runtime-main.9b5277cf.js.map",
-    "static/js/2.9dcddba9.chunk.js": "/DeadTrapv2/static/js/2.9dcddba9.chunk.js",
-    "static/js/2.9dcddba9.chunk.js.map": "/DeadTrapv2/static/js/2.9dcddba9.chunk.js.map",
+    "static/js/2.8ccfe551.chunk.js": "/DeadTrapv2/static/js/2.8ccfe551.chunk.js",
+    "static/js/2.8ccfe551.chunk.js.map": "/DeadTrapv2/static/js/2.8ccfe551.chunk.js.map",
     "index.html": "/DeadTrapv2/index.html",
-    "precache-manifest.544db7c59d93e493ddc5abd7ea631ed3.js": "/DeadTrapv2/precache-manifest.544db7c59d93e493ddc5abd7ea631ed3.js",
+    "precache-manifest.57ac5312415662c8f4d8d8e0f635d7f3.js": "/DeadTrapv2/precache-manifest.57ac5312415662c8f4d8d8e0f635d7f3.js",
     "service-worker.js": "/DeadTrapv2/service-worker.js",
     "static/css/main.2ace4572.chunk.css.map": "/DeadTrapv2/static/css/main.2ace4572.chunk.css.map",
-    "static/js/2.9dcddba9.chunk.js.LICENSE.txt": "/DeadTrapv2/static/js/2.9dcddba9.chunk.js.LICENSE.txt"
+    "static/js/2.8ccfe551.chunk.js.LICENSE.txt": "/DeadTrapv2/static/js/2.8ccfe551.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9b5277cf.js",
-    "static/js/2.9dcddba9.chunk.js",
+    "static/js/2.8ccfe551.chunk.js",
     "static/css/main.2ace4572.chunk.css",
-    "static/js/main.7a72776f.chunk.js"
+    "static/js/main.ba69c646.chunk.js"
   ]
 }
