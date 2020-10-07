@@ -7,7 +7,6 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: "yellow",
   },
   color:{
     color: "green",
@@ -40,13 +39,6 @@ class FetchInfo extends React.Component {
     if (!this.state.person) {
       return <div className={classes.base}>didn't get a person</div>;
     }
-    if (this.state.person.facebook.users){
-      this.setState({username : this.state.person.facebook.usernames});
-    }
-    if (this.state.person.twitter.users){
-      this.setState({mail : this.state.person.twitter.email});
-    }
-
     return (
       <div className={classes.color}>
           <h3>[+] Local Scan Results</h3>
@@ -68,9 +60,9 @@ class FetchInfo extends React.Component {
             <div><h5>Website : {this.state.person.dork.website}</h5></div>
             <h3>[+] Social Media Footprints</h3>
             <div><h5>Facebook User Found : {this.state.person.facebook.users}</h5></div>
-            <div><h5>Facebook UserNames : {this.state.username}</h5></div>
+            <div><h5>Facebook UserNames : {this.state.person.facebook.usernames}</h5></div>
             <div><h5>Twitter User Found : {this.state.person.twitter.users}</h5></div>
-            <div><h5>Twitter Email : {this.state.mail}</h5></div>
+            <div><h5>Twitter Email : {this.state.person.twitter.email}</h5></div>
             <div><h5>LinkedIn accounts : {this.state.person.linkedin.accounts}</h5></div>
             <h3>[+] Spam/Scam Calls</h3>
             <div><h5>spamcalls.net says : {this.state.person.fraud.spamcalls.net}</h5></div>
