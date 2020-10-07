@@ -1,5 +1,6 @@
 import React from "react";
 import { withStyles} from '@material-ui/core/styles';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const styles = theme => ({
   base:{
@@ -37,7 +38,7 @@ class FetchInfo extends React.Component {
     const { classes } = this.props;
 
     if (this.state.loading) {
-      return <div className={classes.base}>loading...</div>;
+      return <div className={classes.base}><CircularProgress color="#7CFC00" /></div>;
     }
 
     if (!this.state.person) {
