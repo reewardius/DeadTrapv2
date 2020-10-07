@@ -37,6 +37,8 @@ def is_valid(num):
 
                 return{"users" : len(profiles), "usernames" : name}
             else:
-                return{"users" : len(profiles)}
+                return{"users" : "0"}
+        else:
+            return {"users" : "not found"}
 
         
