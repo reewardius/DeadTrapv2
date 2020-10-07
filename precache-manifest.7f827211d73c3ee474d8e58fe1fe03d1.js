@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5244d7dc632d5ea3de35ec75e60c577e",
+    "revision": "915fc378c6e2e2b24aa6b67e36b097dc",
     "url": "/DeadTrapv2/index.html"
   },
   {
-    "revision": "6cbb23898d5c507d62a0",
+    "revision": "aa76ee18b8bddc1d80c4",
     "url": "/DeadTrapv2/static/css/main.2ace4572.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DeadTrapv2/static/js/2.8ccfe551.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6cbb23898d5c507d62a0",
-    "url": "/DeadTrapv2/static/js/main.b1501c39.chunk.js"
+    "revision": "aa76ee18b8bddc1d80c4",
+    "url": "/DeadTrapv2/static/js/main.644f7b9a.chunk.js"
   },
   {
     "revision": "d694bc3b6ec0acff0aeb",
