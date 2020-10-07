@@ -56,8 +56,6 @@ class FetchInfo extends React.Component {
             <div><h5>Location : {this.state.person.numverify.location}</h5></div>
             <div><h5>Carrier : {this.state.person.numverify.carrier}</h5></div>
             <div><h5>LineType : {this.state.person.numverify.line_type}</h5></div>
-            <h3>[+] Disposable Number Scan</h3>
-            <div><h5>Website : {this.state.person.dork.website}</h5></div>
             <h3>[+] Social Media Footprints</h3>
             <div><h5>Facebook User Found : {this.state.person.facebook.users}</h5></div>
             <div><h5>Facebook UserNames : {this.state.person.facebook.usernames}</h5></div>

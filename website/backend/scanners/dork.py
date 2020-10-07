@@ -26,7 +26,7 @@ def dorkv(num, sites):
             if result:
                 return{"website" : result}
             else:
-                return {"Website" : "Not Found"}
+                return {"website" : "Not Found"}
     except:
         return{"err" :"google being retard once again blocking requests, try using proxy"}
     
