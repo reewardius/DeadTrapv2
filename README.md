@@ -17,7 +17,7 @@ cd DeadTrap
 pip3 install -r requirements.txt
 ```
 
-## Useage
+## Usage
 type the following commands in your terminal
 ```
 python3 main.py -n <your_number> -s <scanner> -o -r
