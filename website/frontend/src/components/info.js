@@ -7,7 +7,6 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: "green",
   },
   color:{
     color: "green",
