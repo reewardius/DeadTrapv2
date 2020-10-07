@@ -34,7 +34,7 @@ class FetchInfo extends React.Component {
     const { classes } = this.props;
 
     if (this.state.loading) {
-      return <div className={classes.base}><CircularProgress color="#7CFC00" /></div>;
+      return <div className={classes.base}><CircularProgress /></div>;
     }
 
     if (!this.state.person) {
