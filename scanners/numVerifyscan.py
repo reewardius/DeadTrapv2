@@ -24,7 +24,16 @@ def numverifyScan(num, secret=api_generate()):
     if response.content == "Unauthorized" or response.status_code != 200:
         return {'authorized' : "unauthorized"}
 
-    numverifyScan.data = json.loads(response.content)
+    try:
+        numverifyScan.data = json.loads(response.content)
+    except:
+        return {"local_format" : "not found",
+        "intl_format": "not found",
+        "country_code":"not found",
+        "country_name": "not found",
+        "location" : "not found",
+        "carrier" : "not found",
+        "line_type" : "not found"}
 
     if numverifyScan.data["valid"] == False:
         return {'valild' : "invalid"}
