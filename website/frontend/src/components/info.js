@@ -63,8 +63,8 @@ class FetchInfo extends React.Component {
             <div><h5>Twitter Email : {this.state.person.twitter.email}</h5></div>
             <div><h5>LinkedIn accounts : {this.state.person.linkedin.accounts}</h5></div>
             <h3>[+] Spam/Scam Calls</h3>
-            <div><h5>spamcalls.net says : {this.state.person.fraud.spamcalls.net}</h5></div>
-            <div><h5>scamcallsfighters.com says : {this.state.person.fraud2.scamcallfighters.com}</h5></div>
+            <div><h5>spamcalls.net says : {this.state.person.fraud.spamcalls}</h5></div>
+            <div><h5>scamcallsfighters.com says : {this.state.person.fraud2.scamcallfighters}</h5></div>
             <div><h5>URLS : {this.state.person.fraud3.fourfourone}</h5></div>
             <div><h5>{this.state.person.fraud3.truepeoplesearch}</h5></div>
             <div><h5>{this.state.person.fraud3.syncme}</h5></div>
