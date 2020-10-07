@@ -19,7 +19,7 @@ def spamcalls(num):
             for names in name:
                 lists.append(str(names))
             lists.pop(0)
-            return{"spamcalls.net" :  remove_tags(", ".join(lists))}
+            return{"spamcalls" :  remove_tags(", ".join(lists))}
         except Exception as e:
             return{'err' : e}
             
@@ -31,7 +31,7 @@ def scamcallfighters(num):
             parse = BeautifulSoup(r.content.decode('utf-8'), 'html.parser')
             for g in parse.find_all('div', class_='nrp_headmat1'):
 		            records = g.find_all('p')
-            return{"[+] scamcallfighters.com" : remove_tags(str(records))}
+            return{"scamcallfighters" : remove_tags(str(records))}
         except Exception as e:
             return{'err' : e}
 
@@ -43,6 +43,3 @@ def urls(num, countrycode, localnumber):
             return{"URL": r}
     except:
         return{"err" : "error occured"}
-
-
-
