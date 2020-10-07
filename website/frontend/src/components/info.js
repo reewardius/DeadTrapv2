@@ -66,7 +66,6 @@ class FetchInfo extends React.Component {
             <div><h5>spamcalls.net says : {this.state.person.fraud.spamcalls.net}</h5></div>
             <div><h5>scamcallsfighters.com says : {this.state.person.fraud2.scamcallfighters.com}</h5></div>
             <div><h5>URLS : {this.state.person.fraud3.fourfourone}</h5></div>
-            <div><h5>{this.state.person.fraud3.truecaller}</h5></div>
             <div><h5>{this.state.person.fraud3.truepeoplesearch}</h5></div>
             <div><h5>{this.state.person.fraud3.syncme}</h5></div>
             <div><h5>{this.state.person.fraud3.URL}</h5></div>
