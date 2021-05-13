@@ -54,7 +54,7 @@ pandas==1.1.2
 paramiko==2.7.2
 parsel==1.6.0
 phonenumbers==8.12.9
-Pillow==7.2.0
+Pillow==8.2.0
 Protego==0.1.16
 psutil==5.7.2
 pwn==1.0
